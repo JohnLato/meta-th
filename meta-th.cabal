@@ -1,0 +1,35 @@
+Name:                meta-th
+Version:             0.1
+Synopsis:            runtime meta-programming with Template Haskell
+-- Description:         
+Homepage:            https://github.com/JohnLato/meta-th
+License:             BSD3
+License-file:        LICENSE
+Author:              John W. Lato
+Maintainer:          jwlato@gmail.com
+
+-- A copyright notice.
+-- Copyright:           
+
+Category:            Language
+
+Build-type:          Simple
+
+-- Extra files to be distributed with the package, such as examples or
+-- a README.
+-- Extra-source-files:  
+
+-- Constraint on the version of Cabal needed to build this package.
+Cabal-version:       >=1.2
+
+
+Library
+  -- Modules exported by the library.
+  Exposed-modules:     Data.Meta.Meta, Data.Meta.Example, Data.Meta.ExampleExpr
+  
+  -- Packages needed in order to build this package.
+  Build-depends:       base               >= 4.5 && < 5
+                      ,directory          >= 1.1 && < 1.2
+                      ,plugins            >= 1.5 && < 1.6
+                      ,template-haskell
+  
